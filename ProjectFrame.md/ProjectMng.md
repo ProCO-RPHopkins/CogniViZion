@@ -1,4 +1,4 @@
-# Project Mangement & Development
+# Project Management & Development
 
 1. **Project Setup and Environment Configuration**:
     - Create a new directory for your project.
