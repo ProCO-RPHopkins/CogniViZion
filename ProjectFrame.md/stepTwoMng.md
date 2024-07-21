@@ -14,7 +14,7 @@ Step 2: Database Design and Models
     - In your Flask app, create a models.py file.
     - Define SQLAlchemy models for each entity:
 
-**User Model**
+**User Model - Code**
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
@@ -22,21 +22,21 @@ class User(db.Model):
     password_hash = db.Column(db.String(128), nullable=False)
     # Add other relevant fields (e.g., profile image, study preferences)
 
-**StudyMaterials Model**
+**StudyMaterials Model - Code**
 class StudyMaterials(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     content_text = db.Column(db.Text, nullable=False)
     # Add other relevant fields (e.g., file name, upload timestamp)
 
-**Concepts Model**
+**Concepts Model - Code**
 class Concepts(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     study_material_id = db.Column(db.Integer, db.ForeignKey('study_materials.id'), nullable=False)
     concept_text = db.Column(db.Text, nullable=False)
     # Add other relevant fields (e.g., concept type, related topics)
 
-**Progress Model**
+**Progress Model - Code**
 class Progress(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
