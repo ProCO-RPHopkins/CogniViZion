@@ -1,7 +1,6 @@
 # Study Group ViZionED NeXus-ViZion CogniViZion
 
 Problem Statement
-
 -Challenge: Test preparation is time consuming and anxiety-inducing.
 -Context: In today's fast-paced world, students often struggle to find sufficient time for test preparation. Identifying essential concepts and creating study guides can take days, leaving little room for actual studying. This process feels reminiscent of the Dark Ages, especially in the era of innovative tech.
 -Impact: Students face unnecessary stress and anxiety, affecting their confidence during exams.
